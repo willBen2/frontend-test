@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchBar should match with default SearchBar 1`] = `
+<div>
+  <div
+    class="input-container"
+  >
+    <input
+      class="input"
+      value=""
+    />
+  </div>
+</div>
+`;

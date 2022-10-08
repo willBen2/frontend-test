@@ -5,12 +5,12 @@ interface DropdownProps {
   className?: string;
 }
 
-export default function Dropdown({ children, className }: DropdownProps) {
+export default function Dropdown({ children, className, ...rest }: DropdownProps) {
   if (!children || !children.length) {
     return null;
   }
   return (
-    <div className={["dropdown-container", className].join(' ')}>
+    <div className={["dropdown-container", className].join(' ')} {...rest}>
       {children}
     </div>
   )

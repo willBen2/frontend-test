@@ -29,7 +29,7 @@ function SearchInput(props: SearchInput & InputProps) {
       ...rest,
     });
   }
-  return <Input className={props.className} value={search} onChange={onChange} />;
+  return <Input className={props.className} value={search} onChange={onChange} {...rest} />;
 }
 
 const SearchBar: ISearchComponent = (props: SearchBarProps) => {

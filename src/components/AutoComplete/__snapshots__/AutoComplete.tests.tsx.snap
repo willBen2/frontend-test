@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AutoComplete should match with default AutoComplete 1`] = `
+<div>
+  <div
+    class="auto-complete-container "
+  >
+    <div
+      class="input-container"
+    >
+      <input
+        class="input"
+        value=""
+      />
+    </div>
+  </div>
+</div>
+`;

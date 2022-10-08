@@ -24,6 +24,10 @@
     border-bottom: 1px solid #c9c9c9;
 }
 
+.dropdown-item-match {
+    background-color: #dedede;
+}
+
 .dropdown-item:hover {
     background-color: #dedede;
     cursor: pointer;
