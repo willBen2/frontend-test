@@ -1,0 +1,35 @@
+.auto-complete-container {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-container {
+    border: 1px solid #c9c9c9;
+    border-bottom: none;
+    display: block;
+    margin: 0;
+    z-index: 1050;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-size: 14px;
+    background-color: #fff;
+    border-radius: 2px;
+    outline: none;
+    width: 100%;
+    flex-direction: column;
+}
+
+.dropdown-item {
+    padding: 10px;
+    border-bottom: 1px solid #c9c9c9;
+}
+
+.dropdown-item:hover {
+    background-color: #dedede;
+    cursor: pointer;
+}
+
+.highlight {
+    color: cornflowerblue;
+    font-weight: 600;
+}

@@ -1,0 +1,16 @@
+.input-container {
+    border: 1px solid cornflowerblue;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+    padding-inline: 8px;
+    padding-block: 4px;
+}
+
+.input {
+    all: unset;
+    width: 100%;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+}
