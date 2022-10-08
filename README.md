@@ -7,3 +7,9 @@
 `yarn install && yarn start` 
 <br/>or
 <br/>`npm i && npm start`
+
+### How to test the project?
+
+`yarn test`
+<br/>or
+<br/>`npm test`
