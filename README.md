@@ -2,7 +2,7 @@
 
 ## part 1
 
-### ow to run the project?
+### How to run the project?
 
 `yarn install && yarn start` 
 <br/>or
