@@ -12,9 +12,7 @@ function Main() {
   }, [], 500);
 
   return (
-    <div>
-      <AutoComplete onSearchChange={onChange} options={products} />
-    </div>
+    <AutoComplete placeholder="Search for products..." onSearchChange={onChange} options={products} />
   );
 }
 

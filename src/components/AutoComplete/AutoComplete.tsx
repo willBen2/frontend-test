@@ -4,14 +4,16 @@ import './AutoComplete.styles.css';
 import Dropdown from '~/components/AutoComplete/Dropdown';
 import Option from '~/components/AutoComplete/Option';
 
-interface SearchBarProps<T> {
+interface AutoCompleteProps {
   options: {title: string, id: number | string}[];
+  placeholder?: string;
+  inputClassname?: string;
   dropdownClassName?: string;
   dropdownItemClassName?: string;
   onSearchChange: (search: string) => void;
 }
 
-function AutoComplete<T>(props: SearchBarProps<T> & HTMLAttributes<HTMLElement>) {
+function AutoComplete(props: AutoCompleteProps & HTMLAttributes<HTMLElement>) {
   const [search, setSearch] = useState<string>('');
   const { onSearchChange, options } = props;
 
@@ -29,7 +31,9 @@ function AutoComplete<T>(props: SearchBarProps<T> & HTMLAttributes<HTMLElement>)
 
   return (
     <div className={["auto-complete-container", props.className].join(' ')}>
-      <SearchBar onSearchChange={onChange} search={search} />
+      <SearchBar onSearchChange={onChange} search={search}>
+        <SearchBar.Input placeholder={props.placeholder} className={props.inputClassname} />
+      </SearchBar>
       <Dropdown className={props.dropdownClassName}>
         {
           options.filter(o => o.title.toLowerCase().includes(search.toLowerCase())).map(option => (
